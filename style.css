@@ -1,0 +1,194 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Your template name 
+    Template URI: http://bootexperts.com
+    Description: This is html5 template
+    Author: BootExperts
+    Author URI: http://bootexperts.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+
+-----------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,600,600i,700,700i');
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+html, body {height: 100%;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a:focus {outline:0px solid}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+p {margin:0 0 15px;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+}
+a {-webkit-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;text-decoration:none;}
+a:hover {
+  color: #ec4445;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.clear{clear:both}
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.project-bg-1 {
+    background: url(img/1.jpg)
+}
+.project-bg-2 {
+    background: url(img/2.jpg)
+}
+.project-bg-3 {
+    background: url(img/3.jpg)
+}
+.project-bg-4 {
+    background: url(img/4.jpg)
+}
+.project-bg-5 {
+    background: url(img/5.jpg)
+}
+.project-bg-6 {
+    background: url(img/6.jpg)
+}
+.project-bg-7 {
+    background: url(img/7.jpg)
+}
+.project-bg-8 {
+    background: url(img/8.jpg)
+}
+.project-bg-9 {
+    background: url(img/9.jpg)
+}
+
+
+.row.project {
+  margin: 0 -7.5px;
+}
+.section-padding {
+  padding: 80px 0;
+}
+.project-title {
+  margin-bottom: 50px;
+}
+.project-title ul {}
+.project-title ul li {
+  color: #747474;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  padding-right: 40px;
+}
+.project-list {}
+.project-list .col-md-4 {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+.single-project-item {
+  background-color: #ddd;
+  background-position: center center;
+  background-size: cover;
+  height: 325px;
+  margin-bottom: 15px;
+}
+.col-md-4:nth-child(2) .single-project-item,
+.col-md-4:nth-child(4) .single-project-item,
+.col-md-4:nth-child(6) .single-project-item {
+    height: 665px;
+}
+.porject-hover {
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  z-index: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.porject-hover:before {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  -webkit-transform: translateX(100%) scale(0) rotate(0deg);
+          transform: translateX(100%) scale(0) rotate(0deg);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  z-index: -1;
+}
+.porject-hover a, .porject-hover span, .project-title ul li.active {
+    color: #15DCD5;
+}
+.porject-hover a {
+  font-size: 18px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.porject-hover h2 {
+  bottom: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  left: 30px;
+  position: absolute;
+  text-transform: uppercase;
+}
+.porject-hover span {
+  display: block;
+  font-size: 80%;
+  margin-top: 20px;
+}
+.single-project-item:hover .porject-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+.single-project-item:hover .porject-hover:before {
+    -webkit-transform: translateX(0) scale(1) rotate(180deg);
+            transform: translateX(0) scale(1) rotate(180deg);
+    opacity: .7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
